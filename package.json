@@ -1,0 +1,47 @@
+{
+  "name": "ct-gpt4-openai-vs-azure-openai",
+  "version": "1.0.0",
+  "description": "Comparing GPT-4 API results between OpenAI and Azure OpenAI Services",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "demo": "npm run prod -- ./src/index.ts",
+    "dev": "cross-env NODE_ENV=development bun --bun --inspect run ",
+    "prod": "cross-env NODE_ENV=production bun --bun run ",
+    "scratch": "npm run dev -- ./src/scratch.ts",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "typecheck": "bunx --bun tsc --noEmit"
+  },
+  "engines": {
+    "node": ">= 18.x",
+    "npm": ">= 8.x",
+    "bun": ">= 1.x"
+  },
+  "keywords": ["openai", "azure openai", "gpt-4"],
+  "author": {
+    "name": "Michael Sprague",
+    "email": "ms388@cornell.edu"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "common-tags": "1.8.2",
+    "openai": "4.10.0",
+    "uuid": "9.0.1"
+  },
+  "devDependencies": {
+    "bun": "1.0.3",
+    "bun-types": "1.0.3",
+    "@biomejs/biome": "1.2.2",
+    "@types/common-tags": "1.8.2",
+    "@types/node": "20.7.0",
+    "@types/uuid": "9.0.4",
+    "cross-env": "7.0.3",
+    "cz-git": "1.7.1",
+    "typescript": "5.2.2"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-git"
+    }
+  }
+}

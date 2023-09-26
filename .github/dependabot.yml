@@ -1,0 +1,32 @@
+version: 2
+updates:
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "daily"
+      time: "07:00"
+      timezone: "America/New_York"
+    target-branch: "main"
+    commit-message:
+      prefix: "chore"
+      prefix-development: "chore"
+      include: "scope"
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      interval: "daily"
+      time: "07:00"
+      timezone: "America/New_York"
+    target-branch: "main"
+    groups:
+      bun:
+        patterns:
+          - "bun"
+          - "bun-types"
+      types:
+        patterns:
+          - "@types/*"
+    commit-message:
+      prefix: "chore"
+      prefix-development: "chore"
+      include: "scope"

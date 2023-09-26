@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "strict": true,
+    "experimentalDecorators": true,
+    "strictNullChecks": true,
+    "target": "ESNext",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "strictFunctionTypes": true,
+    "rootDir": "src",
+    "outDir": "dist",
+    "types": ["node", "bun-types"],
+    "lib": ["ESNext"],
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true
+  },
+  "include": ["src/**/*.ts"],
+  "exclude": [
+    "src/**/*.d.ts",
+    "src/**/scratch*.ts",
+    "docs",
+    "node_modules",
+    ".history",
+    ".git",
+    ".github",
+    "<node_internals>/**"
+  ]
+}
