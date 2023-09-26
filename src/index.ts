@@ -1,4 +1,4 @@
-import { oneLineTrim, stripIndents } from 'common-tags';
+import { oneLineTrim } from 'common-tags';
 import OpenAI from 'openai';
 
 import { open } from 'fs';
