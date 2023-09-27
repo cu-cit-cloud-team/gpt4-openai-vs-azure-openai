@@ -6,9 +6,15 @@ NOTE: Work and documentation in progress
 
 ## About
 
-We've been seeing inconsistent and sometimes less desireable results from the
-Azure OpenAI Services vs the OpenAI directly. This repo is a place to test and
-compare the results of the two services. These tests are using GPT-4 models.
+We've been seeing inconsistent and less than desireable results from the
+Azure OpenAI Services when working with our own data.
+
+We wanted to be able to identify if the poor results were exclusive to working
+with our own data or if something was fundamentally different when working with
+GPT-4 models via Azure OpenAI vs OpenAI directly.
+
+This repo is a place to test and compare the results of the two services using
+different system prompts and some general questions.
 
 ## Running Locally
 
