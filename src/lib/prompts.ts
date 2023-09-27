@@ -40,8 +40,7 @@ export const allPromptsToTest: Prompt[] = [
     },
     {
       role: 'user',
-      content:
-        'Solve the FizzBuzz problem using modern es2020 style JavaScript.',
+      content: 'Solve the FizzBuzz problem using modern style JavaScript.',
     },
   ],
 ];
