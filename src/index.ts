@@ -1,3 +1,4 @@
+import fs from 'node:fs';
 import { oneLineTrim } from 'common-tags';
 import OpenAI from 'openai';
 import { v4 as uuidv4 } from 'uuid';
@@ -142,9 +143,10 @@ console.groupEnd();
 
 // write results to file
 const resultsFilePath = `./results/${runId}.json`;
+fs.writeFileSync(resultsFilePath, JSON.stringify(testResults, null, 2));
 
-// log results to console
-console.log(JSON.stringify(testResults, null, 2));
+// log results file to console
+console.log(`Results as JSON: ${resultsFilePath}`);
 
 // log total execution time to console
 console.log(
