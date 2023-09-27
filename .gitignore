@@ -134,3 +134,5 @@ dist
 .history
 scratch*.js
 scratch*.ts
+
+results/*.json
