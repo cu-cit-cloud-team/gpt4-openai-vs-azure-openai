@@ -1,7 +1,7 @@
 import { oneLineTrim } from 'common-tags';
 import OpenAI from 'openai';
+import { v4 as uuidv4 } from 'uuid';
 
-import { open } from 'fs';
 import { allPromptsToTest } from './lib/prompts.js';
 
 // destructure environment variables we need
@@ -34,6 +34,15 @@ if (
 const { hrtime } = process;
 
 // console.log(allPromptsToTest);
+
+// create a unique run id
+const runId = uuidv4();
+
+// clear the console
+console.clear();
+
+// log run id to console
+console.group(`Run ID: ${runId}`);
 
 // instantiate the OpenAI client for Azure OpenAI
 const azureOpenAI = new OpenAI({
@@ -104,7 +113,7 @@ for (const prompt of allPromptsToTest) {
 
   // create result object
   const result = {
-    input: prompt,
+    prompt,
     openAI: openAiResults.choices[0].message,
     openAIexecutionTime: formatExecutionTime(openaiEndTime),
     azureOpenAI: azureOpenAiResults.choices[0].message,
@@ -112,14 +121,32 @@ for (const prompt of allPromptsToTest) {
     totalExecutionTime: formatExecutionTime(promptTestEndTime),
   };
   testResults.push(result);
-}
 
-// clear the console
-console.clear();
+  // log results to console
+  console.group('Prompt');
+  console.dir(prompt);
+  console.group('Results');
+  console.group('OpenAI');
+  console.log(openAiResults.choices[0].message);
+  console.log(formatExecutionTime(openaiEndTime));
+  console.groupEnd();
+  console.group('Azure OpenAI');
+  console.log(azureOpenAiResults.choices[0].message);
+  console.log(formatExecutionTime(azureOpenaiEndTime));
+  console.groupEnd();
+  console.groupEnd();
+  console.groupEnd();
+  console.log('\n');
+}
+console.groupEnd();
+
+// write results to file
+const resultsFilePath = `./results/${runId}.json`;
 
 // log results to console
 console.log(JSON.stringify(testResults, null, 2));
 
+// log total execution time to console
 console.log(
-  `\n\nTotal Execution Time: ${(Bun.nanoseconds() / 1000000000).toFixed(3)}`
+  `Total Execution Time: ${(Bun.nanoseconds() / 1000000000).toFixed(3)} seconds`
 );
