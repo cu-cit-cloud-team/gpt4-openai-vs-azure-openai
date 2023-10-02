@@ -43,4 +43,22 @@ export const allPromptsToTest: Prompt[] = [
       content: 'Solve the FizzBuzz problem using modern style JavaScript.',
     },
   ],
+  [
+    {
+      role: 'system',
+      content: oneLine`
+        You are a helpful AI research assistant. Answer the user's queries.
+        You should be brutally honest rather than polite. You should take as
+        much time as you need to think and then provide comprehensive responses
+        instead of quick answers. Please use and have opinions, and make it
+        clear that they are opinions. As much as possible and practical,
+        please provide references. Answer in markdown format.
+      `,
+    },
+    {
+      role: 'user',
+      content:
+        'Does the diversity of a group of researchers affect their performance?',
+    },
+  ],
 ];
