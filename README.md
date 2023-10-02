@@ -43,7 +43,7 @@ different system prompts and some general questions.
 1. Example results:
 
     ```shell
-      Run ID: d564433c-35d2-48c4-9581-4bd6186e7c48
+      Run ID: 40724c27-8878-424e-b313-636819da7230
       Prompt
       [
         {
@@ -58,15 +58,15 @@ different system prompts and some general questions.
       OpenAI
       {
         role: "assistant",
-        content: "The sky appears blue because of a process called Rayleigh scattering. As sunlight reaches Earth's atmosphere, its short wavelength light (blue and violet) is scattered in all directions by the gas molecules in the air. However, our eyes are much more sensitive to blue light and less sensitive to violet light. Additionally, sunlight reaches us more from the blue part of the spectrum, rather than the violet end. Therefore, when we look up at the sky, we perceive it as blue instead of violet.\n"
+        content: "The sky appears blue because of a process called Rayleigh scattering. As sunlight reaches Earth's atmosphere, it is made to change direction and spread out or scatter by tiny molecules in the air. Blue light waves are shorter and scatter more than other colors because they travel in smaller, tighter waves. This scattered blue light is what we see when we look up at the sky."
       }
-      10.585 seconds
+      5.834 seconds
       Azure OpenAI
       {
         role: "assistant",
-        content: "The sky appears blue due to a process called Rayleigh scattering. As sunlight travels through the Earth's atmosphere, it collides with gas molecules and tiny particles which causes the light to scatter in all directions. Blue light is scattered more than other colors because it travels in shorter, smaller waves. So when you look up at the sky, what you're seeing is this blue light that has been scattered from all over the sky."
+        content: "The sky appears blue because of a process called Rayleigh scattering. When the sun's light enters our atmosphere, it is made up of different colors that combined appear white. These colors are all scattered in various directions by the gases and particles in Earth's atmosphere. Blue light being shorter in wavelength is scattered more than other colors because it travels in smaller, shorter waves. This is why we see a blue sky most of the time.\n"
       }
-      3.376 seconds
+      4.175 seconds
 
 
       Prompt
@@ -83,15 +83,15 @@ different system prompts and some general questions.
       OpenAI
       {
         role: "assistant",
-        content: "Dinosaurs went extinct approximately 65.5 million years ago, at the end of the Cretaceous Period, in an event known as the Cretaceous-Paleogene (K–Pg) extinction event. The most widely accepted theory for this extinction event is that a comet or asteroid about 10 kilometers in diameter hit Earth in the Yucatan Peninsula (in what's now Mexico), resulting in a series of environmental changes that were unsuitable for dinosaurs and many other life forms.\n\nThis impact would have caused massive tsunamis, fires, and released an enormous amount of dust into the atmosphere which blocked sunlight for several months or even years. This would have resulted in a dramatic drop in temperature (a phenomena often referred to as \"nuclear winter\"), disrupting photosynthesis and causing food chains to collapse, leading to the extinction of most dinosaur species.\n\nHowever, it's important to note that not all dinosaurs went extinct—birds are modern descendants of a group of two-legged dinosaurs known as theropods.\n"
+        content: "The dinosaurs went extinct about 65 million years ago, at the end of the Cretaceous period, a fact often attributed to a cataclysmic asteroid impact near what is now Chicxulub in Mexico. The impact would have caused tsunamis, earthquakes, and also released substantial amounts of dust into the atmosphere, blocking sunlight and causing drastic global cooling. This would disrupt plant life and ultimately lead to a massive disruption in the food chain.\n\nIn addition to this theory, there are others that suggest intense volcanic activity could have significantly altered the global climate around this same time—or it may have been a combination of both. It's not definitively clear-cut but the most widely supported theory is the asteroid impact. This event ended up wiping out approximately 75% of all species on Earth. It's important to note however that birds are technically considered dinosaurs by scientists because they evolved from theropod dinosaurs."
       }
-      19.867 seconds
+      13.009 seconds
       Azure OpenAI
       {
         role: "assistant",
-        content: "Dinosaurs became extinct around 65.5 million years ago, at the end of the Cretaceous Period, likely due to a catastrophic event often attributed to a large asteroid or comet strike near what is now the Yucatán Peninsula in Mexico. The impact would have caused massive tsunamis and sent up a dust cloud that blocked sunlight for possibly up to a year, resulting in a dramatic change in climate termed an \"impact winter.\"\n\nThis sudden change would have severely impacted plant life and drastically reduced available food resources, causing a domino effect through the food chains. This theory is supported by the existence of a layer of rock called the K-T Boundary (Cretaceous-Tertiary Boundary) filled with unusually high amounts of iridium typically found in asteroids, found all over Earth.\n\nBesides the asteroid theory, other hypotheses pointing to intense volcanic activity or climatic shifts have also been proposed. However, it's widely accepted that it could be a combination of these factors that led to their mass extinction.\n\nIt should be noted that not all dinosaur descendants went extinct 65.5 million years ago. Birds are modern descendants of a group of two-legged dinosaurs known as theropods."
+        content: "The most widely accepted theory about the dinosaurs' extinction is that a giant asteroid or comet impacted Earth around 65 million years ago. This event, which occurred near present-day Chicxulub, Mexico, likely caused massive fires, tsunamis, intense heat from the explosion followed by a \"nuclear winter\" effect. The heat and blast would have killed many creatures instantly, and the dust and particles thrown into the atmosphere would have blocked sunlight, resulting in a collapse of plant life. This would in turn affect herbivores and then predators due to lack of food.\n\nHowever, some scientists also argue that massive volcanic activity in what is now India may have contributed to the extinction event through releasing large amounts of dust and sulphur into the atmosphere with similar effects.\n\nIt's believed the combination of these dramatic changes to their environment made survival for many dinosaur species impossible. It’s important to note though that not all life died out during this time - mammals, birds (which are considered modern descendants of dinosaurs), amphibians and others managed to survive and evolve."
       }
-      17.507 seconds
+      10.225 seconds
 
 
       Prompt
@@ -109,17 +109,43 @@ different system prompts and some general questions.
       OpenAI
       {
         role: "assistant",
-        content: "- Initialize a loop from 1 up to 100. (I include 100 as usually in such problems, the maximum value is inclusive).\n- For each iteration:\n   - If the current number i is divisible by both 3 and 5, print \"FizzBuzz\"\n   - Else if it is only divisible by 3, print \"Fizz\"\n   - Else if it's only divisible by 5, print \"Buzz\"\n   - If none of these conditions are satisfied i.e., it's neither divisible by 3 nor 5, simply print the number itself.\n\nHere is the JavaScript code implementing this logic:\n\n```javascript\nfor(let i=1; i<=100; i++){\n    if(i % (3*5) === 0)\n        console.log(\"FizzBuzz\");\n    else if(i % 3 === 0)\n        console.log(\"Fizz\");\n    else if(i % 5 === 0)\n        console.log(\"Buzz\");\n    else\n        console.log(i);\n}\n```"
+        content: "Pseudocode:\n\n1. Loop from 1 to 100 (both inclusive)\n2. If the loop index is divisible evenly by 3 and 5, print 'FizzBuzz'\n3. Else if the loop index is divisible evenly by only 3, print 'Fizz'\n4. Else if the loop index is divisible evenly by only 5, print 'Buzz'\n5. Else, just print the loop index\n6. End Loop\n\nCode:\n\n```javascript\nfor(let i = 1; i <= 100; i++) {\n    if(i % 15 === 0) {\n        console.log('FizzBuzz');\n    } else if(i % 3 === 0) {\n        console.log('Fizz');\n    } else if(i % 5 === 0) {\n        console.log('Buzz');\n    } else {\n        console.log(i);\n    }\n}\n```\n"
       }
-      21.811 seconds
+      13.110 seconds
       Azure OpenAI
       {
         role: "assistant",
-        content: "Pseudocode:\n1. Initialize a loop to iterate from 1 to 100.\n2. In each iteration, check if the current number is divisible by both 3 and 5.\n3. If it is, print \"FizzBuzz\".\n4. If it is not, check if the current number is divisible by 3.\n5. If it is, print \"Fizz\".\n6. If it's not divisible by 3, check whether the current number is divisible by 5.\n7. If it is, print \"Buzz\".\n8. If the number is neither divisible by 5 nor 3 then just print the number.\n\nJavaScript Code:\n\n```javascript\nfor (let i=1; i <=100; i++){\n    if (i % 15 == 0)\n        console.log(\"FizzBuzz\");\n    else if (i % 3 == 0)\n        console.log(\"Fizz\");\n    else if (i % 5 == 0)\n        console.log(\"Buzz\");\n    else \n        console.log(i);\n}\n```\n"
+        content: "Step-by-step plan in pseudocode:\n1. Declare a for loop from 1 to 100 (both inclusive).\n2. Inside the loop, check three conditions using control flow for each number.\n3. - If the number is divisible by both 3 and 5, print \"FizzBuzz\".\n4. - If the number is only divisible by 3, print \"Fizz\".\n5. - If the number is only divisible by 5, print \"Buzz\".\n6. - If it's not divisible by either of these, then just print the number itself.\n\nJavaScript code:\n\n```javascript\nfor(let i = 1; i <= 100; i++) {\n    let output = '';\n    if(i % 3 === 0) output += 'Fizz';\n    if(i % 5 === 0) output += 'Buzz';\n    console.log(output || i);\n}\n```\nIn this code block, looping takes place from numbers one to one hundred inclusive (Step-1). Within each iteration of this loop, first there's an empty string assigned to `output`. Then it's checked whether `i` is divisible by three—if it is `Fizz` gets appended to `output` (Step-2). The same goes for five and appending `Buzz`. At last if neither of those conditions matched i.e., if `output` remains empty string—then that implies the current number isn't divisible by either three or five (Step-4), which in turn means you should simply log out the current number (`i`) instead of any string message, which is what happens where it says `console.log(output || i);`. In case a non-empty message exists in `output`, that'd be logged out because that would mean some divisibility condition has been met as per our FizzBuzz ruleset above defined at steps-2 through -4 respectively.\n"
       }
-      7.747 seconds
+      17.377 seconds
 
 
-      Results as JSON: ./results/d564433c-35d2-48c4-9581-4bd6186e7c48.json
-      Total Execution Time: 80.931 seconds
+      Prompt
+      [
+        {
+          role: "system",
+          content: "You are a helpful AI research assistant. Answer the user's queries. You should be brutally honest rather than polite. You should take as much time as you need to think and then provide comprehensive responses instead of quick answers. Please use and have opinions, and make it clear that they are opinions. As much as possible and practical, please provide references. Answer in markdown format."
+        },
+        {
+          role: "user",
+          content: "Does the diversity of a group of researchers affect their performance?"
+        }
+      ]
+      Results
+      OpenAI
+      {
+        role: "assistant",
+        content: "Yes, the diversity of a group of researchers can affect their performance in various ways. This is a widely researched topic and there are many studies indicating both positive and negative aspects of workforce diversity.\n\n### Positive Impact:\n\n1. **Innovation and Creativity**: Diversity in a group could mean differences in race, gender, nationality, academic discipline or professional background, age, etc. Such differences may bring new perspectives to the table that stimulate discussion and spur creativity. This point is well-documented in multiple leadership studies ([Homan et al., 2007](https://www.sciencedirect.com/science/article/pii/S1048984307001166), [Phillips et al., 2008](https://journals.sagepub.com/doi/10.1177/0149206308321544)).\n\n2. **Better problem-solving capabilities**: Groups with diverse members can potentially have better problem-solving capabilities because they see issues from different angles due to their different backgrounds ([Page, 2007](http://www.leppanencontemporary.com/pdf/The_Difference.pdf)).\n\n3. **Improved decision making**: Diverse teams are likely to consider more alternative solutions compared to homogeneous ones hence contributing towards enhanced decision making ([Cox & Blake, 1991](https://journals.aom.org/doi/abs/10.5465/amr.1991.4278938)).\n\n### Negative Impact:\n \n1. **Communication barriers and conflict**: Differences in culture or language can lead to misunderstandings or conflicts within diverse groups if not managed properly ([Stahl et al., 2010](https://onlinelibrary.wiley.com/doi/full/10.1002/job.674) , [Jehn et al., 1999](https://journals.sagepub.com/doi/abs/10.1177/014920639902500303)).\n\n2. **Social loafing**: This is a phenomenon in which some group members reduce their effort, relying on the work from other members of the group. Evidence suggests that social loafing might be higher in diverse groups ([Latané et al., 1979](https://journals.sagepub.com/doi/10.1177/014616727900500407)).\n\nIn my opinion, the potential advantages of diversity—innovation, problem-solving capabilities and decision making—are crucial for research where novel ideas are the primary catalysts for progress. However, it's important to take note of potential downsides and manage these carefully.\n\nPlease note that this overview doesn't cover all possible impacts of diversity on group performance. The impact can also vary depending on how 'diversity' is defined and measured in different contexts. It's a complex topic with many influencing factors.\n"
+      }
+      43.414 seconds
+      Azure OpenAI
+      {
+        role: "assistant",
+        content: "Based on the available data, diversity within a team of researchers can indeed influence their performance, generally in a positive way. This finding stems from several key factors related to the concept of cognitive diversity.\n\n1. **Problem-Solving**: More diverse teams have been found to be better at problem-solving. According to various studies such as Hong and Page (2004), a group with diverse sets of identities, experiences and backgrounds can bring wider range of ideas and solutions to a specific problem[^1^]. \n\n2. **Innovation**: Diverse teams are often more innovative, according to landmark research from Richard Freeman and Wei Huang. Their study published in 2015 examined roughly 2.5 million scientific papers published over 20 years and found that papers written by ethnically diverse research teams received more citations than those written by homogenous teams[^2^].\n\n3. **Avoids Groupthink**: A lack of diversity can lead to groupthink, where conformity pressure leads the group to make collective decisions that may not always be optimal[^3^]. Diversity can reduce the risk of this occurring.\n\nAlthough these studies suggest positive impacts arising from diversity, it's important to note that directly correlating diversity with improved performance isn't fully straightforward immediately because successful research also depends on multiple factors like research facility quality, funding availability and individual abilities.\n\nMoreover, diversity may also introduce challenges such as communication issues due to differences in cultural backgrounds or languages barriers. Nevertheless, most evidence suggests that the benefits often outweigh downside hence making case for diverse research groups stronger.\n\nKeep in mind this is an opinion informed by current literature. The effects of diversity on team performance may evolve as newer studies become available or societal factors change.\n\n[^1^]: Hong L., & Page S.E., 2004,\"Groups Of Diverse Problem Solvers Can Outperform Groups Of High-Ability Problem Solvers\", Proceedings Of The National Academy Of Sciences Of The United States Of America\n\n[^2^]: Freeman R.B., & Huang W., 2015,\"Collaborating With People Like Me: Ethnic Co-Authorship Within The US\", National Bureau Of Economic Research\n\n[^3^]: Janis I.L., 1972 \"Victims of Groupthink: Psychological Study of Foreign-policy Decisions and Fiascoes.\", Houghton Mifflin"
+      }
+      38.474 seconds
+
+
+      Results as JSON: ./results/40724c27-8878-424e-b313-636819da7230.json
+      Total Execution Time: 145.658 seconds
     ```
