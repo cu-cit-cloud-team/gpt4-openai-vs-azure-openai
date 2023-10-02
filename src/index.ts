@@ -71,7 +71,7 @@ for (const prompt of allPromptsToTest) {
     top_p: 1,
     presence_penalty: 0.5,
     frequency_penalty: 0.5,
-    max_tokens: 256,
+    max_tokens: 2000,
     model: 'gpt-4-0613',
     messages: [],
     stream: false,
