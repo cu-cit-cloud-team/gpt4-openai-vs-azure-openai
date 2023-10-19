@@ -34,7 +34,7 @@
     "@biomejs/biome": "1.2.2",
     "@types/common-tags": "1.8.3",
     "@types/node": "20.8.7",
-    "@types/uuid": "9.0.5",
+    "@types/uuid": "9.0.6",
     "cross-env": "7.0.3",
     "cz-git": "1.7.1",
     "typescript": "5.2.2"
