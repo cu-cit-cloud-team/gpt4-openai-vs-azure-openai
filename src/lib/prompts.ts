@@ -40,7 +40,8 @@ export const allPromptsToTest: Prompt[] = [
     },
     {
       role: 'user',
-      content: 'Solve the FizzBuzz problem using modern style JavaScript.',
+      content:
+        'Explain ES6 generators in JavaScript and provide a real-world example.',
     },
   ],
   [
