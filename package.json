@@ -25,7 +25,7 @@
   "license": "MIT",
   "dependencies": {
     "common-tags": "1.8.2",
-    "openai": "4.29.0",
+    "openai": "4.29.1",
     "uuid": "9.0.1"
   },
   "devDependencies": {
