@@ -26,7 +26,7 @@
   "dependencies": {
     "common-tags": "1.8.2",
     "openai": "4.49.1",
-    "uuid": "9.0.1"
+    "uuid": "10.0.0"
   },
   "devDependencies": {
     "bun": "1.1.12",
