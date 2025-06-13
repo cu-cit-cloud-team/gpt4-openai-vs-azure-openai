@@ -36,7 +36,7 @@
     "@types/node": "24.0.1",
     "@types/uuid": "10.0.0",
     "cross-env": "7.0.3",
-    "cz-git": "1.11.1",
+    "cz-git": "1.11.2",
     "typescript": "5.8.3"
   },
   "config": {
