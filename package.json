@@ -31,7 +31,7 @@
   "devDependencies": {
     "bun": "1.2.16",
     "bun-types": "1.2.16",
-    "@biomejs/biome": "1.9.4",
+    "@biomejs/biome": "2.0.0",
     "@types/common-tags": "1.8.4",
     "@types/node": "24.0.3",
     "@types/uuid": "10.0.0",
